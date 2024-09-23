@@ -18,6 +18,11 @@ function generateWorkout(event) {
   let prompt = `User instructions: Generate a workout split based on ${instructionsInput.value}`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let workoutElement = document.querySelector("#workout-split");
+  workoutElement.classList.remove("hidden");
+
+  workoutElement.innerHTML = `<div class="generating">⌛Generating split for a ${instructionsInput.value} workout..</div>`;
+
   console.log("Generating workout");
   console.log(`prompt: is ${prompt}`);
   console.log(`context: ${context}`);

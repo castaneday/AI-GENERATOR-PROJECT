@@ -15,19 +15,23 @@
       </header>
 
       <main>
-        <form id="workout-generator-form">
-          <input
-            type="text"
-            placeholder="Enter the muscle group you would like to workout.."
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="workout-split" id="workout-split"></div>
+        <div class="form-container">
+          <form id="workout-generator-form">
+            <input
+              type="text"
+              placeholder="Enter the muscle group you would like to workout.."
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e: Chest, Glutes, Back</div>
+        </div>
+
+        <div class="workout-split hidden" id="workout-split"></div>
       </main>
 
       <footer>
