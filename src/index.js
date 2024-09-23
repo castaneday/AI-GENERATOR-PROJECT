@@ -1,5 +1,4 @@
 function displayWorkout(response) {
-  console.log("workout generated");
   new Typewriter("#workout-split", {
     strings: response.data.answer,
     autoStart: true,
@@ -22,10 +21,6 @@ function generateWorkout(event) {
   workoutElement.classList.remove("hidden");
 
   workoutElement.innerHTML = `<div class="generating">⌛Generating split for a ${instructionsInput.value} workout..</div>`;
-
-  console.log("Generating workout");
-  console.log(`prompt: is ${prompt}`);
-  console.log(`context: ${context}`);
 
   axios.get(apiUrl).then(displayWorkout);
 }
