@@ -1,5 +1,5 @@
 body {
-  background-color: #cbbdee;
+  background-color: #e7d5f1;
   font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -25,7 +25,7 @@ h1 {
 }
 
 .form-container {
-  background-color: white;
+  background-color: rgb(219, 196, 233);
   margin-bottom: 30px;
   border-radius: 10px;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
